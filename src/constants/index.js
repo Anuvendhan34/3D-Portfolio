@@ -106,12 +106,12 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: "Three JS",
-    icon: threejs,
+    name:"reactjs",
+    icon:reactjs,
   },
   {
-    name: "MySQL",
-    icon: mysql,
+    name: "Three JS",
+    icon: threejs,
   },
 ];
 
