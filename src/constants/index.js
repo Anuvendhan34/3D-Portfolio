@@ -1,4 +1,3 @@
-
 import {
   logo,
   backend,
@@ -10,13 +9,10 @@ import {
   close,
   css,
   gearXpert,
-  project2,
-  project3,
   mysql,
   express,
   aws,
   mui,
-  
   gsap,
   framer,
   figma,
@@ -32,20 +28,24 @@ import {
   firstTestimonial,
   secondTestimonial,
   thirdTestimonial,
+  c,
+  cpp,
+  java,
+  python
 } from '../assets'
 
+// ✅ Import company logo
+import Tekisky from "../assets/company/ether.png";
 
-// Import Tekisky separately
-import tekisky from "../assets/company/tekisky.png";
-
+// ✅ Import project images
+import project1 from "../assets/pro1.png";
+import project2 from "../assets/projt2.png";
+import project3 from "../assets/DijkstraAlgorithm.webp";
 
 export const navLinks = [
-
-
   {
     id: "about",
     title: "About",
-    
   },
   {
     id: "work",
@@ -78,6 +78,22 @@ const services = [
 
 const technologies = [
   {
+    name: "C",
+    icon: c,
+  },
+  {
+    name: "C++",
+    icon: cpp,
+  },
+  {
+    name: "Java",
+    icon: java,
+  },
+  {
+    name: "Python",
+    icon: python,
+  },
+  {
     name: "HTML 5",
     icon: html,
   },
@@ -90,80 +106,24 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "gsap",
-    icon: gsap,
-  },
-  {
-    name: "framer",
-    icon: framer,
-  },
-
- 
-  {
     name: "Three JS",
     icon: threejs,
   },
   {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Material Ui",
-    icon: mui,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "Express Js",
-    icon: express,
-  },
-  {
-    name: "AWS",
-    icon: aws,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "MySql",
+    name: "MySQL",
     icon: mysql,
   },
-
-  {
-    name: "git",
-    icon: git,
-  },
- 
-
 ];
 
 const experiences = [
   {
-    title: "Full-Stack Developer",
-    company_name: "Tekisky",
-    icon: tekisky,
+    title: "Ether Services",
+    company_name: "Deep Learning Intern",
+    icon: Tekisky,
     iconBg: "#383E56",
-    date: "Jan 2023 - present",
+    date: "July 2024",
     points: [
-      "Developing and maintaining web applications using MERN technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Gained hands-on experience with Neural Networks, CNNs, RNNs, and GANs, applying these concepts to projects such as object detection using YOLO and sentiment analysis with LSTMs. Developed skills in data preprocessing and optimizing AI models for real-world deployment."
     ],
   },
 ];
@@ -171,102 +131,55 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Huzaif proved me wrong.",
-    name: "MD Mustaqeem",
-    designation: "Ecommerce",
-    company: "QuickMart",
-    image: firstTestimonial,
+      "I participate in CodeChef contests to improve my competitive programming skills and rankings.",
+    name: "CodeChef",
+    username: "anuvendhan",
+    link: "https://www.codechef.com/users/anuvendhan",
+    image: "src/assets/tech/codechef.png",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Huzaif does.",
-    name: "Abdul Raheman",
-    designation: "Ecommerce Business",
-    company: "justbuyz",
-    image: secondTestimonial,
+      "LeetCode helps me sharpen my problem-solving skills with algorithmic challenges and company-specific questions.",
+    name: "LeetCode",
+    username: "anuvendhan",
+    platform: "LeetCode ID: pzfa3ZWE0n",
+    link: "https://leetcode.com/pzfa3ZWE0n/",
+    image: "src/assets/tech/leetcode.png",
   },
   {
     testimonial:
-      "After Huzaif optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "James Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: thirdTestimonial,
+      "Codolio allows me to build and showcase my portfolio, highlighting my coding skills and projects interactively.",
+    name: "Codolio",
+    username: "anuvendhan",
+    link: "https://codolio.com/profile/Anuvendhan",
+    image: "src/assets/tech/codolio.jpeg",
   },
 ];
 
 const projects = [
   {
-    name: "Tekisky Mart",
+    name: "ImageHide---Visual-Steganography-Application",
     description:
-      "Tekisky Mart is a web-based platform that allows users to search, explore, and purchase a wide range of products from various providers, offering a seamless and efficient shopping experience.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "white-text-gradient",
-      },
-      {
-        name: "node",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
- 
-    ],
+      "ImageHide is a visual steganography application that allows users to hide secret messages or data within an image file. Using advanced algorithms, the application embeds text or files into the least significant bits of an image, making it invisible to the naked eye while maintaining the image’s visual appearance.",
+    tags: [],
+    image: project1,
+    source_code_link: "https://github.com/Anuvendhan34/ImageHide---Visual-Steganography-Application",
+  },
+  {
+    name: "VoiceBoard---Interactive-Whiteboard-with-Text-to-Speech",
+    description:
+      "VoiceBoard is an interactive whiteboard application that integrates text-to-speech functionality, allowing users to collaborate and communicate in real-time. It enables users to draw, write, and annotate on a shared digital canvas while the content is read aloud through text-to-speech.",
+    tags: [],
     image: project2,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/Anuvendhan34/VoiceBoard---Interactive-Whiteboard-with-Text-to-Speech",
   },
   {
-    name: "GearXpert",
+    name: "Dijkstra's Algorithm Random Graph Visualizer",
     description:
-      "GearXpert is your ultimate destination for premium auto parts and accessories, Whether you're an automobile enthusiast or a professional, find everything you need to upgrade, repair.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "emailJs",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Gsap",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: gearXpert,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "GoGroove-Ecommerce",
-    description:
-      "Go-Groove is your ultimate destination for premium products across various categories. Whether you're a savvy shopper or a professional, enhance, and simplify your lifestyle—all in one place!",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "express",
-        color: "white-text-gradient",
-      },
-      {
-        name: "node",
-        color: "green-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-    ],
+      "PathFinder Visualization is an interactive tool that demonstrates how Dijkstra's Algorithm works to find the shortest path in a weighted graph. This project is designed to provide an intuitive and visual understanding of the algorithm, making it easier to grasp its core concepts and functionality.",
+    tags: [],
     image: project3,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/Anuvendhan34/PathFinder-Visualization-for-Finding-the-Shortest-Path-Using-Dijkstra-s-Algorithm",
   },
 ];
 

@@ -76,6 +76,34 @@ const Experience = () => {
               experience={experience}
             />
           ))}
+          
+          {/* Additional Box */}
+          <VerticalTimelineElement
+            contentStyle={{ background: "#1d1836", color: "#fff" }}
+            contentArrowStyle={{ borderRight: "7px solid  #232631" }}
+            date="February 2024"
+            iconStyle={{ background: "#ff5733" }}
+            icon={
+              <div className='flex justify-center items-center w-full h-full'>
+                <img
+                  src="/src/assets/apex.png"
+                  className='w-[200%] h-[200%] object-contain'
+                />
+              </div>
+            }
+          >
+            <div>
+              <h3 className='text-white text-[24px] font-bold'>Appex Technologies</h3>
+              <p className='text-secondary text-[16px] font-semibold' style={{ margin: 0 }}>
+                ML Training
+              </p>
+            </div>
+            <ul className='mt-5 list-disc ml-5 space-y-2'>
+              <li className='text-white-100 text-[14px] pl-1 tracking-wider'>
+              Deepened my knowledge of deploying AI models on cloud platforms like AWS and Azure. Explored strategies for building scalable, efficient, and secure cloud-based machine learning solutions.
+              </li>
+            </ul>
+          </VerticalTimelineElement>
         </VerticalTimeline>
       </div>
     </>
